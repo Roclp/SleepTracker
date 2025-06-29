@@ -13,6 +13,11 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+//        maven {
+//            url = uri("https://mvn.0110.be/#/releases")
+//        }
+        maven("https://jitpack.io")
+        maven { url = uri("https://jitpack.io") }
     }
     dependencies {
         classpath(libs.hilt.android.gradle.plugin)
